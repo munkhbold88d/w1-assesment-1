@@ -2,20 +2,39 @@
 // Ex.:
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
-function greaterThanTen(numbers) {}
+function greaterThanTen(arraynumbers) {
+  return arraynumbers.filter(num => num > 10);
+}
+
+// console.log(greaterThanTen([1, 2, 3, 11, 12, 13]))
+
+// const arraynumbers = [1, 2, 3, 11, 12, 13];
+// const greaterThanTen = arraynumbers.filter(numbers => numbers >10)
+// console.log(greaterThanTen)
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {}
+function bWords(words) {
+  return words.filter(word => word.charAt(0).toLowerCase() === 'b');
+  }
+  // console.log(bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']))
 
+  // const wordList = (['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
+  // const bStartingWords = bWords(wordList);
+  // console.log(bStartingWords);
+
+  
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+
+(originalArray, additionalItems) {
+  
+}
 
 // Return an array of all items with the given length.
 // Ex.:
