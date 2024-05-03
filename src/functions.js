@@ -16,32 +16,21 @@ function average(x, y) {
   return (x + y) / 2
 }
 
-// function average(x, y) {
-//   return (x + y) / 2
-// }
-// let x = 10;
-// let y = 5;
-// let result = average(x, y);
-
-//   console.log(`Average: ` +result);
-
-
 // Return true if x and y are mostly equivalent up to a tolerance of 0.001.
 // In other words, return true if the aboslute value of x - y is less than 0.001.
 // Ex.:
 //   approximatelyEqual(10.001, 10);
 //   => true
 function approximatelyEqual(x, y) {
-  
+  return Math.abs(x - y) < 0.001;
 }
-  
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
 // Ex.:
 //   fullName('John', 'Doe');
 //   => 'John Doe'
 function fullName(firstName, lastName) {
-  
+  return `${firstName} ${lastName}`;
 }
 
 // Generate the sentence "PERSON was drinking BEVERAGE at LOCATION" using the
@@ -49,7 +38,9 @@ function fullName(firstName, lastName) {
 // Ex.:
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
-function generateSentence(person, beverage, location) {}
+function generateSentence(person, beverage, location) {
+  return `${person} was drinking ${beverage} at ${location}.`;
+}
 
 // Return the given string with all vowels replced with '*' characters.
 // Ex.:
